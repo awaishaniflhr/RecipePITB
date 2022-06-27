@@ -5,15 +5,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/text_discover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -22,14 +21,15 @@
         android:textColor="@color/fontcolor"
         android:textSize="26sp"
         android:textStyle="bold" />
+
     <RelativeLayout
         android:id="@+id/slider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_home"
-        android:layout_marginTop="20dp"
+        android:layout_below="@id/text_discover"
         android:layout_marginStart="10dp"
         android:background="@drawable/dumplings__2_">
+
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
@@ -54,19 +54,22 @@
             android:textSize="14sp"
             android:textStyle="normal"
             tools:targetApi="p" />
+
         <LinearLayout
+            android:id="@+id/eta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/eta"
             android:layout_below="@id/recipedetail"
             android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
             android:orientation="horizontal">
+
             <ImageView
+                android:id="@+id/clock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/clock"
-                android:background="@drawable/clock"/>
+                android:background="@drawable/clock" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -77,12 +80,14 @@
                 android:textSize="14sp"
                 android:textStyle="normal"
                 tools:targetApi="p" />
+
             <ImageView
                 android:id="@+id/shape"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:background="@drawable/chef" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

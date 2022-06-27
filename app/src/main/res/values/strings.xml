@@ -22,4 +22,6 @@
     <string name="pasta">Pasta</string>
     <string name="popular_recipes">Popular Recipes</string>
     <string name="marsala_marinated_skirt_steak">Marsala Marinated Skirt Steak</string>
+    <string name="recipes_detail">Recipes Detail</string>
+    <string name="setting">Setting</string>
 </resources>
