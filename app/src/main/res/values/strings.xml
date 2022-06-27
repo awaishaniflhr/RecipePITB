@@ -12,4 +12,14 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="recipes">Recipes</string>
     <string name="disover">Disover</string>
+    <string name="potstickers_chinese_dumplings">Potstickers\n(Chinese\nDumplings)</string>
+    <string name="an_authentic_potsticker_nrecipe_using_ground_nbeef_and_ground_shrimp">An authentic potsticker\nrecipe using ground\nbeef and ground shrimp</string>
+    <string name="_25_min">25Min</string>
+    <string name="easy">Easy</string>
+    <string name="categories">Categories</string>
+    <string name="pizza">Pizza</string>
+    <string name="steak">Steak</string>
+    <string name="pasta">Pasta</string>
+    <string name="popular_recipes">Popular Recipes</string>
+    <string name="marsala_marinated_skirt_steak">Marsala Marinated Skirt Steak</string>
 </resources>

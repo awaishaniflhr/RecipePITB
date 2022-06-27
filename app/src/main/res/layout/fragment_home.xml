@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -24,6 +30,245 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
         android:background="@drawable/dumplings__2_">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/potstickers_chinese_dumplings"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/recipedetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:lineHeight="20sp"
+            android:text="@string/an_authentic_potsticker_nrecipe_using_ground_nbeef_and_ground_shrimp"
+            android:textColor="@color/lightgray"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            tools:targetApi="p" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eta"
+            android:layout_below="@id/recipedetail"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clock"
+                android:background="@drawable/clock"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/_25_min"
+                android:textColor="@color/lightgray"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:targetApi="p" />
+            <ImageView
+                android:id="@+id/shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/chef" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/easy"
+                android:textColor="@color/lightgray"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                tools:targetApi="p" />
+
+        </LinearLayout>
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slider"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/categories"
+        android:textColor="@color/fontcolor"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categories_slider"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/categories"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/pizza">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pizza"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/pasta">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pasta"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/steak">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/steak"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/pizza">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pizza"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/pasta">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pasta"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/steak">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/steak"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/text_popular"
+        android:layout_below="@id/categories_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/popular_recipes"
+        android:textColor="@color/fontcolor"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:id="@+id/recipesslider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_popular"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/skirlsteak">
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text_steak"
+        android:layout_below="@+id/recipesslider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/marsala_marinated_skirt_steak"
+        android:textColor="@color/fontcolor"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 </RelativeLayout>
+</ScrollView>
