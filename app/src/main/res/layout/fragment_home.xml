@@ -29,7 +29,6 @@
         android:layout_below="@id/text_discover"
         android:layout_marginStart="10dp"
         android:background="@drawable/dumplings__2_">
-
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
@@ -238,8 +237,6 @@
                     android:textStyle="normal" />
             </LinearLayout>
 
-
-
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -261,11 +258,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/text_popular"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/skirlsteak">
 
     </RelativeLayout>
+
+
     <TextView
         android:id="@+id/text_steak"
         android:layout_below="@+id/recipesslider"
